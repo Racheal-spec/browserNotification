@@ -1,0 +1,37 @@
+{
+    "name": "Chrome notification",
+    
+    "version": "1.0",
+
+    "content_scripts": [
+        {
+          "matches": ["http://*/*", "https://*/*"],
+          "js": [
+            "js/app.js"
+          ]
+        }
+      ],
+    
+    "description": "This Chrome extension reminds user about an app and also about news and new releases",
+    
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+      },
+
+    "background": {
+        "scripts": ["js/background.js"],
+        "persistent": false
+      },
+      "incognito": "split",
+      "permissions": [
+        "notifications"
+      ],
+
+      "icons": {
+        "32": "icon1.svg"
+        },
+
+    "manifest_version": 2 
+   
+    
+  }

@@ -1,0 +1,14 @@
+.chromeBtn{
+   text-align: center;
+    padding: 4px 5px;
+    background-color: blue;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.button-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15rem;
+}
